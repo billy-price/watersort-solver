@@ -2,8 +2,7 @@
 
 This game is stupid and wastes my time so I made a dead simple backtracking solver so that I have no reason to play it ever again.
 
-- [iOS app](https://apps.apple.com/us/app/water-sort-puzzle/id1514542157)
-- disable ads by removing the app's mobile data permission and then turning off wifi
+- [iOS app](https://apps.apple.com/us/app/water-sort-puzzle/id1514542157) - disable ads by removing the app's mobile data permission and then turning off wifi
 
 ## Rules
 - There are `(n+2)`-`tubes`, each stacked with up to `m` (usually `4`) `cells` of liquid. Each `cell` of liquid is one of `n` colours (for the usual `n=12`, `blue, brown, cyan, emerald, gray, mint, orange, olive, pink, purple, red, yellow`)
