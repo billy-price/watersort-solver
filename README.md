@@ -55,3 +55,95 @@ TUBES_MED = tubeio.read_tubes(
 Then run `main.py`, and the solution is printed to the terminal as a sequence of states, with the corresponding move indicated with arrows. Each state is printed as a visual representation of the tubes (each tube is vertical), where each cell is colour highlighted using the [`sty`](https://sty.mewo.dev) text colouring package. Your terminal may not support colour highlighting so the text of each cell is the hexadecimal value of the internal `int` representation of each colour.
 
 Tube height can be modified in `solver.py`.
+
+## Example Solution
+```
+↑     ↓
+7 2 7
+7 1 2
+2 2 1
+1 1 7 _ _
+
+↑       ↓
+  2 7
+  1 2
+2 2 1 7
+1 1 7 7 _
+
+  ↑     ↓
+  2 7
+  1 2
+  2 1 7
+1 1 7 7 2
+
+↑ ↓
+    7
+  1 2
+  2 1 7 2
+1 1 7 7 2
+
+↓ ↑
+  1 7
+  1 2
+  2 1 7 2
+_ 1 7 7 2
+
+  ↑     ↓
+    7
+    2
+1 2 1 7 2
+1 1 7 7 2
+
+↑ ↓
+    7
+    2   2
+1   1 7 2
+1 1 7 7 2
+
+↓   ↑
+    7
+  1 2   2
+  1 1 7 2
+_ 1 7 7 2
+
+↑     ↓
+
+  1 2   2
+  1 1 7 2
+7 1 7 7 2
+
+↓   ↑
+
+  1 2 7 2
+  1 1 7 2
+_ 1 7 7 2
+
+↑       ↓
+
+  1   7 2
+  1 1 7 2
+2 1 7 7 2
+
+↓   ↑
+        2
+  1   7 2
+  1 1 7 2
+_ 1 7 7 2
+
+↑ ↓
+        2
+  1   7 2
+  1   7 2
+1 1 7 7 2
+
+    ↑ ↓
+  1     2
+  1   7 2
+  1   7 2
+_ 1 7 7 2
+
+  1   7 2
+  1   7 2
+  1   7 2
+_ 1 _ 7 2
+```
